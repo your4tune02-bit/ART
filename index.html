@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4efe6">
+  <title>Museum of Moments</title>
+  <meta name="description" content="A polished museum-inspired website that turns one class trip into a visual story of art, space, and friendship.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./index.html" aria-label="Museum of Moments home">
+        <span class="brand-mark">MoM</span>
+        <span class="brand-text">Museum of Moments</span>
+      </a>
+
+      <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#story">Story</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn-small" href="./gallery.html">Open Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="overview">
+    <section class="hero-band">
+      <div class="container hero reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Virtual art exhibit</p>
+          <h1>Museum of Moments</h1>
+          <p class="hero-lead">
+            A virtual exhibit built from one museum visit — seven chapters of natural history, pre-colonial heritage, literary portraits, and a blue immersive installation that turns the final room into an open sea.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="./gallery.html">Browse The Collection</a>
+            <a class="btn btn-ghost" href="#story">Read The Story</a>
+          </div>
+          <ul class="stat-row" aria-label="Collection statistics">
+            <li>
+              <strong data-total-photos>0</strong>
+              <span>curated photos</span>
+            </li>
+            <li>
+              <strong data-total-chapters>0</strong>
+              <span>story chapters</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>shared museum day</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-feature">
+            <img src="./assets/images/IMG_3775.JPG" alt="Friends posing in front of a green museum wall filled with framed artworks." loading="eager">
+            <figcaption>Opening portrait at the green wall gallery.</figcaption>
+          </figure>
+          <figure class="hero-detail">
+            <img src="./assets/images/IMG_5902.JPG" alt="Group portrait inside a blue immersive museum room with glowing light." loading="lazy">
+            <figcaption>Final chapter inside the blue installation.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container intro-grid reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Project overview</p>
+          <h2>One visit, arranged as a living catalogue</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            The exhibit is organized across seven chapters — gallery rooms, transitional spaces, and an immersive installation — each drawn from works and spaces encountered during the visit. Natural history paintings, a pre-colonial skull, archival photographs, literary portraits, and Clyde Aedriel Rafael's Dáyat installation are presented here as a single curated sequence.
+          </p>
+          <p data-art-mood>
+            Soft light and layered texture let each room read like its own small installation.
+          </p>
+          <button class="btn btn-small btn-ghost" id="refresh-mood" type="button">Refresh mood note</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section">
+      <div class="container reveal">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">Exhibit curation</p>
+            <h2>Five works selected from the full collection</h2>
+          </div>
+          <p class="section-note">
+            Each selection draws from a different chapter of the visit — from the natural history wall and pre-colonial artifacts to the heritage portrait hall and the Dáyat installation. Click any work to read its full interpretive note.
+          </p>
+        </div>
+        <div class="topwork-panel" data-topwork-panel aria-live="polite"></div>
+        <div class="highlight-grid" data-home-highlights></div>
+      </div>
+    </section>
+
+    <section id="story" class="section section-dark">
+      <div class="container reveal">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">Curatorial concept</p>
+            <h2>Seven chapters, one continuous visit</h2>
+          </div>
+          <p class="section-note">
+            The exhibit is arranged across seven distinct spaces — from gallery rooms dense with painted works and heritage artifacts, through open transitional areas, and into the immersive blue installation that closes the sequence.
+          </p>
+        </div>
+
+        <div class="story-layout">
+          <article class="story-card">
+            <span class="story-index">01–04</span>
+            <h3>The Gallery Rooms</h3>
+            <p>
+              Galleries I through IV move from a natural history wall and heritage portraits, through pre-colonial artifacts, to the Dáyat installation — a submerged blue room of rattan waves and suspended fish built from the coastal memory of Pangasinan.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <span class="story-index">05–06</span>
+            <h3>The Passage &amp; The Atrium</h3>
+            <p>
+              Between the rooms, the museum opens up. These transitional spaces — corridor and atrium — carry their own quiet attention. What people notice when they are not looking for anything in particular is often the most honest record of where they were.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <span class="story-index">07</span>
+            <h3>The Wing</h3>
+            <p>
+              The final chapter is the loosest. Poses are less composed, the attention more diffuse — and in that looseness, the photographs become more true. The exhibit does not end cleanly. It lingers in the people moving through its last rooms.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="section">
+      <div class="container reveal">
+        <div class="visit-panel">
+          <div class="visit-copy">
+            <p class="eyebrow">Full exhibit</p>
+            <h2>View the complete catalogue</h2>
+            <p>
+              The gallery page presents all seven chapters with chapter filters, the full photo grid, and interpretive notes for each curated work — from the natural history wall to the final rooms of Dáyat.
+            </p>
+          </div>
+          <a class="btn" href="./gallery.html">Go To Gallery</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Museum of Moments</p>
+      <p>Seven chapters from one shared museum day. <span data-year></span></p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3eee4">
+  <title>Museum of Moments | Gallery</title>
+  <meta name="description" content="A structured museum trip gallery with chapter filters, featured images, and editorial presentation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="gallery-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./index.html" aria-label="Museum of Moments home">
+        <span class="brand-mark">MoM</span>
+        <span class="brand-text">Museum of Moments</span>
+      </a>
+
+      <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav aria-label="Primary navigation">
+        <a href="./index.html">Home</a>
+        <a href="#article">Article</a>
+        <a href="#collection">Collection</a>
+        <a href="#top-picks">Top Picks</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero-band">
+      <div class="container page-hero reveal">
+        <div>
+          <p class="eyebrow">Virtual exhibit catalogue</p>
+          <h1>Works and spaces from the museum visit</h1>
+        </div>
+        <p class="page-hero-copy">
+          Seven chapters, one shared day. This catalogue presents the selected works, artifact rooms, and transitional spaces gathered during the visit — arranged in the order they were encountered, with interpretive notes for each curated selection.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <blockquote class="feature-quote">
+          "The sea does not forget the shape of those who have lived beside it."
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="article" class="section section-soft">
+      <div class="container article-layout reveal">
+        <article class="article-card">
+          <p class="eyebrow">Collection note</p>
+          <h2>About the arrangement</h2>
+          <p>
+            The exhibit is organized across seven chapters, each corresponding to a distinct space encountered during the visit. The sequence moves from gallery rooms focused on natural history, heritage artifacts, and literary portraiture, through open transitional areas, and into the immersive Dáyat installation that closes the experience.
+          </p>
+          <p>
+            Rather than grouping by medium or date, the arrangement follows the logic of the visit itself — the order in which rooms were entered, the shift in atmosphere from one space to the next, and the cumulative weight of moving through a museum over a full day.
+          </p>
+        </article>
+
+        <aside class="chapter-card">
+          <p class="eyebrow">Exhibit chapters</p>
+          <h2>Reading the sequence</h2>
+          <ol>
+            <li>Gallery I — Projected light &amp; open landscape</li>
+            <li>Gallery II — Heritage portraits &amp; pre-colonial artifacts</li>
+            <li>Gallery III — Natural history wall &amp; specimen studies</li>
+            <li>Gallery IV — Dáyat immersive installation</li>
+            <li>The Passage — Transitional corridor</li>
+            <li>The Atrium — Open exhibition space</li>
+            <li>The Wing — Final rooms &amp; closing moments</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section id="collection" class="section">
+      <div class="container reveal">
+        <div class="section-heading section-heading-split compact">
+          <div>
+            <p class="eyebrow">Full collection</p>
+          <h2>Works, spaces, and supporting images</h2>
+          </div>
+          <p class="section-note">
+            Showing <span data-gallery-count>0</span> images in the active selection.
+          </p>
+        </div>
+
+        <div class="gallery-tools">
+          <div class="gallery-spotlight" data-spotlight aria-live="polite"></div>
+          <div class="tool-stack">
+            <button class="btn btn-ghost" id="shuffle-gallery" type="button">Reshuffle The Wall</button>
+            <p class="tool-caption">Rehangs the grid while keeping the room-based filters in place.</p>
+          </div>
+        </div>
+
+        <div class="filter-row" data-filter-row></div>
+        <div class="photo-grid" id="photo-grid"></div>
+      </div>
+    </section>
+
+    <section id="top-picks" class="section section-soft">
+      <div class="container reveal">
+        <div class="section-heading compact">
+          <p class="eyebrow">Featured analysis</p>
+          <h2>Five selected works with curatorial notes</h2>
+        </div>
+        <div class="topwork-panel" data-topwork-panel aria-live="polite"></div>
+        <div class="highlight-grid" data-top-artworks></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Museum of Moments</p>
+      <p>Seven chapters from one shared museum day. <span data-year></span></p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
