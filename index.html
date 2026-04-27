@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4efe6">
+  <title>Museum of Moments</title>
+  <meta name="description" content="A polished museum-inspired website that turns one class trip into a visual story of art, space, and friendship.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./index.html" aria-label="Museum of Moments home">
+        <span class="brand-mark">MoM</span>
+        <span class="brand-text">Museum of Moments</span>
+      </a>
+
+      <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#story">Story</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn-small" href="./gallery.html">Open Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="overview">
+    <section class="hero-band">
+      <div class="container hero reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Virtual art exhibit</p>
+          <h1>Museum of Moments</h1>
+          <p class="hero-lead">
+            This website presents a virtual exhibit built from a museum visit, bringing together artworks, exhibition spaces, and architectural details into one curated digital experience.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="./gallery.html">Browse The Collection</a>
+            <a class="btn btn-ghost" href="#story">Read The Story</a>
+          </div>
+          <ul class="stat-row" aria-label="Collection statistics">
+            <li>
+              <strong data-total-photos>0</strong>
+              <span>curated photos</span>
+            </li>
+            <li>
+              <strong data-total-chapters>0</strong>
+              <span>story chapters</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>shared museum day</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-feature">
+            <img src="./assets/images/IMG_3775.JPG" alt="Friends posing in front of a green museum wall filled with framed artworks." loading="eager">
+            <figcaption>Opening portrait at the green wall gallery.</figcaption>
+          </figure>
+          <figure class="hero-detail">
+            <img src="./assets/images/IMG_5902.JPG" alt="Group portrait inside a blue immersive museum room with glowing light." loading="lazy">
+            <figcaption>Final chapter inside the blue installation.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container intro-grid reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Project overview</p>
+          <h2>Curated as an interactive museum exhibit</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            The exhibit is organized around selected works and landmark spaces documented during the visit. It turns observation, interpretation, and visual research into an interactive format that supports curation, art analysis, and digital presentation.
+          </p>
+          <p data-art-mood>
+            Soft light, layered texture, and the quiet pulse of a gallery full of friends.
+          </p>
+          <button class="btn btn-small btn-ghost" id="refresh-mood" type="button">Refresh mood note</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section">
+      <div class="container reveal">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">Exhibit curation</p>
+            <h2>Five significant works from the visit</h2>
+          </div>
+          <p class="section-note">
+            Each selected work opens into a short image-led fragment drawn from the atmosphere of the room.
+          </p>
+        </div>
+        <div class="topwork-panel" data-topwork-panel aria-live="polite"></div>
+        <div class="highlight-grid" data-home-highlights></div>
+      </div>
+    </section>
+
+    <section id="story" class="section section-dark">
+      <div class="container reveal">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">Curatorial concept</p>
+            <h2>A sequence shaped by environment, heritage, and immersion</h2>
+          </div>
+          <p class="section-note">
+            The exhibit is arranged to move from observed wall-based works, to heritage-inspired spaces, and finally to immersive light installations that change how the viewer reads form and atmosphere.
+          </p>
+        </div>
+
+        <div class="story-layout">
+          <article class="story-card">
+            <span class="story-index">01</span>
+            <h3>Green Wall Gallery</h3>
+            <p>
+              The first room centers on framed studies and painted surfaces, introducing a theme of observation and placing the viewers directly within the display of art.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <span class="story-index">02</span>
+            <h3>Ruins And Sunset Sets</h3>
+            <p>
+              The middle sequence brings in ruin-like architecture and projected scenery, connecting the exhibit to historical atmosphere, built heritage, and theatrical presentation.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <span class="story-index">03</span>
+            <h3>Blue Ocean Installation</h3>
+            <p>
+              The closing rooms rely on luminous blue installation work, where atmosphere, reflection, and movement become the final emotional focus of the exhibit.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="section">
+      <div class="container reveal">
+        <div class="visit-panel">
+          <div class="visit-copy">
+            <p class="eyebrow">Full exhibit</p>
+            <h2>View the complete catalogue</h2>
+            <p>
+              The gallery page extends the exhibit with chapter filters, artwork descriptions, and interpretive notes for the curated selections.
+            </p>
+          </div>
+          <a class="btn" href="./gallery.html">Go To Gallery</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Museum of Moments</p>
+      <p>A record of painted walls, staged rooms, and blue light. <span data-year></span></p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
